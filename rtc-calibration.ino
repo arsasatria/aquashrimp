@@ -1,3 +1,24 @@
+/*
+ * 
+ █████   ██████  ██    ██  █████  ███████ ██   ██ ██████  ██ ███    ███ ██████  
+██   ██ ██    ██ ██    ██ ██   ██ ██      ██   ██ ██   ██ ██ ████  ████ ██   ██ 
+███████ ██    ██ ██    ██ ███████ ███████ ███████ ██████  ██ ██ ████ ██ ██████  
+██   ██ ██ ▄▄ ██ ██    ██ ██   ██      ██ ██   ██ ██   ██ ██ ██  ██  ██ ██      
+██   ██  ██████   ██████  ██   ██ ███████ ██   ██ ██   ██ ██ ██      ██ ██      
+            ▀▀                                                                  
+                                                                                
+                                                               
+ AQUASHRIMP Technology | MTs TechnoNatura
+ ⓒ 2021 - Aquashrimp & TechnoNatura
+ All Rights Reserved
+ ========== INFORMATION ==========
+ Project: IoT Fishery for Level 8
+ Details: -
+ Website: https://aquashrimp.technonatura.id
+ File ID: A04
+ =================================
+*/
+
 #include <iostream>
 #include <chrono>
 #include <ctime>
