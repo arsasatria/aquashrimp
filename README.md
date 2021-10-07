@@ -6,3 +6,6 @@
      ██   ██  ██████   ██████  ██   ██ ███████ ██   ██ ██   ██ ██ ██      ██ ██      
                  ▀▀                                                                  
                                                                                 
+<hr><br>
+
+<iframe src="https://creativecommons.org/licenses/by-nc-nd/2.5/" width="100%">
