@@ -22,40 +22,40 @@
  =================================
 */
 
-#include <iostream>
+#include <Wire.h>
 #include <DS3231.h>
 using namespace std;
+struct t; 
  
-DS3231  rtc(SDA, SCL);
-string feedTime[3] = {"07:00:00","12:00:00","20:00:00"};
+
+String feedTimeAquashrimp[3] = {"07:00:00","12:00:00","20:00:00"};
 int pinRelayAutofeeder = 7;
 int relayDuration = 1000;
 int relayEvents = 0;
 int dangerIndicatorLight = 4;
+String rtcTime = "";
  
 void setup(){
-  rtc.begin();
+  Wire.begin();
+  DS3231_init(DS3231_CONTROL_INTCN);
 }
  
 void loop(){
   
-  var rtcTime = rtc.getTimeStr(); //prosedur pembacaan waktu
+  DS3231_get(&t);
+  rtcTime = (t.hour) . ":" . (t.min) . "" . (t.sec);
+ 
+  //relayEvents goes door be like-an, sshhh..
   
-//   while(relayEvents < 3){
-    
-    
-//     relayEvents++;
-//   }
-  
-  if(rtcTime == feedTime[0]){
+  if(rtcTime == feedTimeAquashrimp[0]){
     digitalWrite(pinRelayAutofeeder, HIGH);
     delay(relayDuration);
     digitalWrite(pinRelayAutofeeder, LOW);
-  }else if(rtcTime == feedTime[1]){
+  }else if(rtcTime == feedTimeAquashrimp[1]){
     digitalWrite(pinRelayAutofeeder, HIGH);
     delay(relayDuration);
     digitalWrite(pinRelayAutofeeder, LOW);
-  }else if(rtcTime == feedTime[2]){
+  }else if(rtcTime == feedTimeAquashrimp[2]){
     digitalWrite(pinRelayAutofeeder, HIGH);
     delay(relayDuration);
     digitalWrite(pinRelayAutofeeder, LOW);
